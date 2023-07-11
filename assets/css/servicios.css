@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    font-family: 'Roboto', sans-serif;  
+  } 
+
+  
+  body {
+    background: #ffffff;
+    height: 100vh;    
+  }
+
+  .container{
+    height: 100vh;
+    background-image:url(../img/kitty.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+  }
+
+
+  
+  header {
+
+    position: sticky;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    background: rgb(255, 255, 255);
+    color: black;
+  } 
+
+
+  .logo img{
+    width: 50px;
+    padding-top: 4px;    
+    border-radius: 20px;
+  }
+
+  
+  header .navbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header .navbar a {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 0.2rem;
+    padding: 1rem 1rem;    
+    color: #000000;
+    letter-spacing: 1px;
+  }
+  
+  header .navbar a:hover
+   {
+    color: white;
+    background-color: rgb(62, 62, 255);
+    border-radius: 20px;
+    transition: all 1s;
+  }
+  
+  header .btn {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+  }
+ 
+
+
+
+
+  /* --------------------------------------------------------------------------------------------------------------------------------- */
+
+  section{
+    display: flex;
+  }
+
+  aside{
+    height: 70vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px 0 50px;
+  }
+
+  h2{
+    color: white;
+    font-weight: 900;
+    font-size: 40px;  
+    text-shadow: 2px 2px black; 
+    
+  }
+
+  .customp{
+    font-style: italic;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px rgb(255, 255, 255);
+  }
+
+  .custombutton {
+    margin-top: 15px;
+  }
+
+  .custombutton button{
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;     
+    background-color: rgb(0, 94, 255);
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(255, 255, 255);    
+    
+  }
+
+  button:hover{
+    letter-spacing: 2px;
+    transition: all 1s;
+  }
+
+  main{
+    height: 100%;
+  }
+
+  
+
+
+  @media (max-width: 991px) {
+    html {
+      font-size: 0.9rem;
+    }
+    header {
+      padding: 1rem 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header .btn {
+      display: block;
+    }
+  
+    header .navbar {
+      position: fixed;
+      flex-direction: column;
+      min-width: 300px;
+      height: 100vh;
+      background: rgb(255, 255, 255);
+      top: 0;
+      right: -100%;
+      transition: all 0.9s;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding-top: 10rem;
+    }
+  
+    header .navbar.active2 {
+      right: 0;
+      transition: 0.7s;
+    }
+  
+    header .navbar .close-btn {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 25px;
+    }
+  
+    header .navbar a {
+      display: block;
+      font-size: 1.9rem;
+      margin: 15px;
+      padding: 0.5rem 15px;
+    }
+  
+    header .navbar a:hover {
+      background: #21293a;
+      color: #fff;
+    }
+  
+    header .logo {
+      font-size: 25px;
+      font-weight: 500;
+    }
+  }
+
+
+  /* ------------------------------------------------------------------------------------------------------------------------------
+  
+  */
+
+  .servicios{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;    
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .servicios h3{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 2px black;
+  }
+
+  ul{ 
+    min-width: 400px;
+  }
+
+
+  ul li{
+    color: white;
+    font-size: 35px;
+    padding: 20px;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+    list-style: none;
+   
+  }
+
+  li{
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 20px;
+    border-radius: 20px;
+  }
